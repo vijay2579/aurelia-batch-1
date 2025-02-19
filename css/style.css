@@ -7,12 +7,16 @@ ul {
   list-style: none;
 }
 
-.chat-icon img {
-  width: 50px;
-  height: 50px;
-  position: fixed;
-  left: 20px;
-  top: 50%;
+/*
+// These styles are related to positioning concept
+.chat-icon {
+  img {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 20px;
+    top: 50%;
+  }
 }
 
 .navigation {
@@ -23,10 +27,12 @@ ul {
   height: 40px;
 }
 
-.container h1 {
-  position: sticky;
-  bottom: 0;
-  background-color: #FFF;
+.container {
+  h1 {
+    position: sticky;
+    bottom: 0;
+    background-color: #FFF;
+  }
 }
 
 .parent {
@@ -34,13 +40,61 @@ ul {
   height: 600px;
   background-color: red;
   position: relative;
+
+  .child {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
-.parent .child {
+*/
+.container .parent {
+  width: 700px;
+  height: 600px;
+  background-color: red;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.container .parent .child {
   width: 100px;
   height: 100px;
   background-color: green;
+}
+.container .navigation {
+  background-color: grey;
+  position: fixed;
+  width: 100%;
+}
+.container .navigation > ul {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+.container .navigation > ul li {
+  padding: 10px;
+  position: relative;
+}
+.container .navigation > ul li a {
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.container .navigation > ul li a:hover {
+  color: red;
+}
+.container .navigation > ul li ul {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  background-color: grey;
+  width: 100px;
+  top: 40px;
+  display: none;
+}
+.container .navigation > ul li:hover ul {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
