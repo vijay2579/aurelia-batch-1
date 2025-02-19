@@ -5,8 +5,6 @@ git config --global user.name
 git config --global user.email "email"
 git config --global user.email
 
-
-
 git status // List down all modified or newly added files/folder
 git branch // List down all available branches
 
@@ -31,3 +29,6 @@ git diff FILE_PATH // Show the differences between existing Vs modified changes 
 
 git branch -d BRANCH_NAME // deletes branch if merged with main branch
 git branch -D BRANCH_NAME // deletes branch even if not merged with main branch
+
+git fetch // Fetch all available remote branches (You won't be able to see all available branches in local)
+git checkout BRANCH_NAME // it will show the selected branches
