@@ -93,16 +93,27 @@ ul {
           }
         }
 
-        ul {
+        > ul {
           position: absolute;
           background-color: grey;
           width: 100px;
           top: 40px;
           display: none;
+
+          li {
+            position: relative;
+
+            ul {
+              position: absolute;
+              top: 0;
+              left: 102px;
+              display: none;
+            }
+          }
         }
 
         &:hover {
-          ul {
+          > ul {
             display: block;
           }
         }
