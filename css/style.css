@@ -88,13 +88,22 @@ ul {
 .container .navigation > ul li a:hover {
   color: red;
 }
-.container .navigation > ul li ul {
+.container .navigation > ul li > ul {
   position: absolute;
   background-color: grey;
   width: 100px;
   top: 40px;
   display: none;
 }
-.container .navigation > ul li:hover ul {
+.container .navigation > ul li > ul li {
+  position: relative;
+}
+.container .navigation > ul li > ul li ul {
+  position: absolute;
+  top: 0;
+  left: 102px;
+  display: none;
+}
+.container .navigation > ul li:hover > ul {
   display: block;
 }/*# sourceMappingURL=style.css.map */
