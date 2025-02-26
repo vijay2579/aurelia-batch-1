@@ -68,7 +68,6 @@ ul {
 }
 .container .navigation {
   background-color: grey;
-  position: fixed;
   width: 100%;
 }
 .container .navigation > ul {
@@ -106,4 +105,27 @@ ul {
 }
 .container .navigation > ul li:hover > ul {
   display: block;
+}
+.container .content > div ul {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  height: 300px;
+  align-items: center;
+}
+.container .content > div ul li {
+  width: 300px;
+  height: 300px;
+  border: 1px solid grey;
+  position: relative;
+}
+.container .content > div ul li > div img {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 250px;
+  height: 200px;
+  transform: translate(-50%, -50%);
 }/*# sourceMappingURL=style.css.map */
