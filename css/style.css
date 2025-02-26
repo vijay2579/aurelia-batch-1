@@ -76,6 +76,7 @@ ul {
   justify-content: flex-end;
 }
 .container .navigation > ul li {
+  z-index: 1;
   padding: 10px;
   position: relative;
 }
@@ -128,4 +129,36 @@ ul {
   width: 250px;
   height: 200px;
   transform: translate(-50%, -50%);
+}
+.container .content .text-on-image {
+  padding: 20px;
+  display: none;
+  position: relative;
+}
+.container .content .text-on-image img {
+  width: 100%;
+  height: 300px;
+}
+.container .content .text-on-image .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 400px;
+}
+.container .content .text-on-image-part2 {
+  background-image: url("../images/dummyImage.jpg");
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+.container .content .text-on-image-part2 .text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  text-align: center;
+  color: red;
 }/*# sourceMappingURL=style.css.map */

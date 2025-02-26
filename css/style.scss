@@ -81,6 +81,7 @@ ul {
       justify-content: flex-end;
 
       li {
+        z-index: 1;
         padding: 10px;
         position: relative;
 
@@ -147,6 +148,41 @@ ul {
             }
           }
         }
+      }
+    }
+
+    .text-on-image {
+      padding: 20px;
+      display: none;
+      position: relative;
+      img {
+        width: 100%;
+        height: 300px;
+      }
+      .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 400px;
+      }
+    }
+
+    .text-on-image-part2 {
+      background-image: url("../images/dummyImage.jpg");
+      width: 100%;
+      height: 300px;
+      position: relative;
+
+      .text {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        text-align: center;
+        color: red;
       }
     }
   }
